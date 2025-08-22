@@ -8,5 +8,4 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 
-
 export default app;

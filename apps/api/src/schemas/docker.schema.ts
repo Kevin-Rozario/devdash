@@ -5,7 +5,7 @@ export const dockerContainerSchema = z.object({
   status: z.enum(["running", "stopped", "paused"]),
   image: z.string(),
   ports: z.array(z.number()).optional(),
-  lastCheckedAt: z.date().optional()
+  lastCheckedAt: z.date().optional(),
 });
 
 export type DockerContainerInput = z.infer<typeof dockerContainerSchema>;

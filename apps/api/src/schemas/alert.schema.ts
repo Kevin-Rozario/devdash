@@ -6,7 +6,7 @@ export const alertSchema = z.object({
   severity: z.enum(["info", "warning", "critical"]),
   status: z.enum(["active", "resolved"]).default("active"),
   createdAt: z.date().default(new Date()),
-  resolvedAt: z.date().optional()
+  resolvedAt: z.date().optional(),
 });
 
 export type AlertInput = z.infer<typeof alertSchema>;

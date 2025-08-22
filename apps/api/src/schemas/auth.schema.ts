@@ -4,13 +4,13 @@ export const userSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long"),
   email: z.string().email("Invalid email address"),
   password: z.string().min(6, "Password must be at least 6 characters long"),
-  role: z.enum(["admin", "user"]).default("user")
+  role: z.enum(["admin", "user"]).default("user"),
 });
 
 // For login (only email + password)
 export const loginSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(6)
+  password: z.string().min(6),
 });
 
 // Types inferred automatically

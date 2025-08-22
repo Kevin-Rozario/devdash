@@ -7,9 +7,12 @@ const IntegrationSchema: Schema<IIntegrationDocument> = new Schema(
   {
     userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
     service: { type: String, required: true },
-    config: { type: Object, required: true }
+    config: { type: Object, required: true },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
-export const IntegrationModel = mongoose.model<IIntegrationDocument>("Integration", IntegrationSchema);
+export const IntegrationModel = mongoose.model<IIntegrationDocument>(
+  "Integration",
+  IntegrationSchema,
+);
