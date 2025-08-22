@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
-import type { IAlert } from "../types/alert.js";
+import type { Alert } from "@schemas/alert.schema.js";
 
-export interface IAlertDocument extends IAlert, Document {}
+export interface IAlertDocument extends Alert, Document {}
 
 const AlertSchema: Schema<IAlertDocument> = new Schema(
   {

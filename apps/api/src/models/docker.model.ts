@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
-import type { IDockerContainer } from "../types/dockerContainer.js";
+import type { DockerContainer } from "@schemas/docker.schema.js";
 
-export interface IDockerContainerDocument extends IDockerContainer, Document {}
+export interface IDockerContainerDocument extends DockerContainer, Document {}
 
 const DockerContainerSchema: Schema<IDockerContainerDocument> = new Schema(
   {

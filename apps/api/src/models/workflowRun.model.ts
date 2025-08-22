@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
-import type { IWorkflowRun } from "../types/workflowRun.js";
+import type { WorkflowRun } from "@schemas/workflow.schema.js";
 
-export interface IWorkflowRunDocument extends IWorkflowRun, Document {}
+export interface IWorkflowRunDocument extends WorkflowRun, Document {}
 
 const WorkflowRunSchema: Schema<IWorkflowRunDocument> = new Schema(
   {

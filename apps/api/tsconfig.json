@@ -25,7 +25,8 @@
       "@types/*": ["types/*"],
       "@middlewares/*": ["middlewares/*"],
       "@models/*": ["models/*"],
-      "@routes/*": ["routes/*"]
+      "@routes/*": ["routes/*"],
+      "@schemas/*": ["schemas/*"]
     },
 
     /* if transpiling with TypeScript: */

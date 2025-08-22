@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
-import type { ILogEntry } from "../types/logEntry.js";
+import type { LogEntry } from "@schemas/logEntry.schema.js";
 
-export interface ILogEntryDocument extends ILogEntry, Document {}
+export interface ILogEntryDocument extends LogEntry, Document {}
 
 const LogEntrySchema: Schema<ILogEntryDocument> = new Schema(
   {
