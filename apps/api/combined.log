@@ -1,0 +1,9 @@
+{"level":"info","message":{"duration":"0ms","method":"GET","status":200,"url":"/"},"service":"user-service"}
+{"level":"info","message":{"duration":"11ms","method":"GET","status":500,"url":"/"},"service":"user-service"}
+{"level":"info","message":{"duration":"0ms","method":"GET","status":200,"url":"/favicon.ico"},"service":"user-service"}
+{"level":"info","message":{"duration":"5ms","method":"GET","status":500,"url":"/favicon.ico"},"service":"user-service"}
+{"level":"info","message":{"duration":"0ms","method":"GET","status":200,"url":"/"},"service":"user-service"}
+{"level":"info","message":{"duration":"8ms","method":"GET","status":200,"url":"/"},"service":"user-service"}
+{"level":"info","message":{"duration":"0ms","method":"GET","status":200,"url":"/favicon.ico"},"service":"user-service"}
+{"level":"info","message":{"duration":"4ms","method":"GET","status":404,"url":"/favicon.ico"},"service":"user-service"}
+{"duration":"8ms","level":"info","message":"HTTP GET / 304 - 8ms","method":"GET","service":"user-service","status":304,"url":"/"}
