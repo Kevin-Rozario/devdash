@@ -13,4 +13,4 @@ const envSchema = z.object({
     JWT_REFRESH_TTL: z.string(),
 });
 
-export const env = envSchema.safeParse(process.env);
+export const env = envSchema.parse(process.env);
