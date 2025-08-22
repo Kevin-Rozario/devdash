@@ -1,5 +1,5 @@
 import { FastifyReply, FastifyRequest } from "fastify";
-import asyncHandler from "../utils/asyncHandler.util.js";
+import asyncHandler from "@utils/asyncHandler.util.js";
 
 export const healthCheck = asyncHandler(
   async (request: FastifyRequest, reply: FastifyReply) => {

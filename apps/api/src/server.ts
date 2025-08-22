@@ -1,6 +1,6 @@
 import { buildApp } from "./app.js";
-import { env } from "./configs/env.config.js";
-import { logger } from "./configs/logger.config.js";
+import { env } from "@configs/env.config.js";
+import { logger } from "@configs/logger.config.js";
 
 const startServer = async () => {
   const app = await buildApp();
