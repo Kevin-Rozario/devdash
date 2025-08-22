@@ -7,7 +7,7 @@ const authorizeMiddleware =
   (req: Request, res: Response, next: NextFunction) => {
     const user = req.user;
     if (!user) {
-        return next(new ApiError(401, "Unauthorized"));
+      return next(new ApiError(401, "Unauthorized"));
     }
 
     if (!roles.includes(user.role)) {
