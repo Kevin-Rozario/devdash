@@ -16,6 +16,18 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
+    "baseUrl": "./src",
+    "paths": {
+      "@controllers/*": ["controllers/*"],
+      "@config/*": ["config/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@models/*": ["models/*"],
+      "@routes/*": ["routes/*"]
+    },
+
     /* if transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "dist",
